@@ -1,4 +1,11 @@
 // Last updated: 2/22/2026, 1:55:12 PM
+/* 
+    One-Pass Solution. (Traversing the array for just one time)
+    Add the difference to hashmap (target - nums[index])
+    Keep adding until we find the difference in the HashMap again
+    Add the index to 0 and currindex to 1
+    else add it to HashMap
+*/
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
